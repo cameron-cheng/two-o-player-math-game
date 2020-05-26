@@ -14,7 +14,4 @@ class MathQuestion
     input == @answer
   end
 
-  def prompt_answer
-    puts "Player 1: "
-  end
 end

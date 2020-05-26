@@ -15,7 +15,7 @@ class Player
   end
 
   def print_lives
-    puts @lives
+    puts "#{name} #{@lives}/3 lives left"
   end
 end
 
