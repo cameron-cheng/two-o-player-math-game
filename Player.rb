@@ -1,20 +1,23 @@
-class Person
-  attr_accessor :lives
-  def initialize
+class Player
+  attr_accessor :lives, :name
+   
+  def initialize(name)
     @lives = 3
+    @name = name
   end
     
-  def is_dead? 
-    alive true;
+  def dead? 
+    @lives <= 0
   end
 
   def take_damage
-    lives -= 1
+    @lives -= 1
   end
 
   def print_lives
-    puts lives
+    puts @lives
   end
 end
+
 
 
